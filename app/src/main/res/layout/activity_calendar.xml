@@ -1,0 +1,1204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.picturediary.CalendarActivity">
+
+    <TableLayout
+        android:layout_width="399dp"
+        android:layout_height="536dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintVertical_bias="0.62"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_editor_absoluteY="26dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <Button
+                android:id="@+id/pMonthButton"
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="前の月へ" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="2017年10月"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/nMonthButton"
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="次の月へ" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="日"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="月"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="火"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="水"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="木"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="金"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="土"
+                android:textSize="20sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem0_0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary0_0"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView0_0"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem0_1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary0_1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView0_1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem0_2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary0_2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView0_2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem0_3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary0_3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView0_3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem0_4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary0_4"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView0_4"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem0_5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary0_5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView0_5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem0_6">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary0_6"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView0_6"/>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem1_0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary1_0"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView1_0"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem1_1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary1_1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView1_1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem1_2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary1_2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView1_2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem1_3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary1_3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView1_3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem1_4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary1_4"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView1_4"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem1_5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary1_5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView1_5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem1_6">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary1_6"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView1_6"/>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem2_0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary2_0"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView2_0"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem2_1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary2_1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView2_1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem2_2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary2_2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView2_2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem2_3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary2_3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView2_3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem2_4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary2_4"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView2_4"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem2_5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary2_5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView2_5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem2_6">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary2_6"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView2_6"/>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem3_0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary3_0"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView3_0"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem3_1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary3_1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView3_1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem3_2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary3_2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView3_2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem3_3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary3_3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView3_3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem3_4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary3_4"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView3_4"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem3_5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary3_5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView3_5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem3_6">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary3_6"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView3_6"/>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem4_0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary4_0"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView4_0"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem4_1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary4_1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView4_1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem4_2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary4_2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView4_2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem4_3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary4_3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView4_3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem4_4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary4_4"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView4_4"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem4_5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary4_5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView4_5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem4_6">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary4_6"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView4_6"/>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem5_0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary5_0"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView5_0"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem5_1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary5_1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView5_1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem5_2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary5_2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView5_2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem5_3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary5_3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView5_3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem5_4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary5_4"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView5_4"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem5_5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary5_5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView5_5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/diaryItem5_6">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/isDiary5_6"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/calendar_day_line"
+                    android:id="@+id/dayView5_6"/>
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
