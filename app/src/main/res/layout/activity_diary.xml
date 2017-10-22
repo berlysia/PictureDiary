@@ -7,8 +7,8 @@
     tools:context="com.picturediary.DiaryActivity">
 
     <android.support.constraint.Guideline
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
         android:id="@+id/guideline"
         app:layout_constraintGuide_begin="20dp"
         android:orientation="vertical" />
